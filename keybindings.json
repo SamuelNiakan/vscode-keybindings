@@ -1,0 +1,57 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+	"key": "ctrl+f",
+	"command": "-actions.find",
+	"when": "editorFocus || editorIsOpen"
+    },
+    {
+	"key": "enter",
+	"command": "editor.action.nextMatchFindAction",
+	"when": "editorFocus"
+    },
+    {
+	"key": "enter",
+	"command": "-editor.action.nextMatchFindAction",
+	"when": "editorFocus && findInputFocussed"
+    },
+    {
+	"key": "ctrl+k",
+	"command": "emacs.C-k"
+    },
+    {
+	"key": "ctrl+k",
+	"command": "-emacs.C-k",
+	"when": "editorTextFocus"
+    },
+    {
+	"key": "ctrl+s",
+	"command": "-actions.find",
+	"when": "!findWidgetVisible"
+    },
+    {
+	"key": "ctrl+s",
+	"command": "-editor.action.nextMatchFindAction",
+	"when": "findWidgetVisible"
+    },
+    {
+	"key": "ctrl+x ctrl+s",
+	"command": "workbench.action.files.save",
+	"when": "terminalFocus"
+    },
+    {
+	"key": "ctrl+x ctrl+s",
+	"command": "-workbench.action.files.save",
+	"when": "!terminalFocus"
+    },
+    {
+	"key": "ctrl+x ctrl+k",
+	"command": "workbench.action.closeAllEditors",
+	"when": "terminalFocus"
+    },
+    {
+	"key": "ctrl+x ctrl+k",
+	"command": "-workbench.action.closeAllEditors",
+	"when": "!terminalFocus"
+    }
+    ]
